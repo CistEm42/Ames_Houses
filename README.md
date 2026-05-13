@@ -1,5 +1,38 @@
-This repo is divided into three parts. I used the Ames housing dataset to train a linear model to predict the prices of houses when given certain features.
-The load.py: this is where the data used for the project is loaded.
-train.py: in this part, the model was trained on just a single model, Linear regression model. Metrics were collected for this particular model.
-evaluate.py: the model was trained and evaluated on 5 different models and a cross validation was done using KFold with 5 splits. The trained models were fitted to a pipeline. 
-And there is also the config.py file, this file consists of configurations that were used during the project. configrations like file path, numerical features and categorical features.
+# Ames Housing Price Prediction Pipeline
+
+A comprehensive machine learning pipeline for predicting housing prices using the Ames Housing Dataset. The pipeline includes data loading, preprocessing, training multiple regression models, and evaluating their performance.
+
+## Project Structure
+Ames_Houses/
+├── data/
+│ └── AmesHousingUpdated.csv
+├── src/
+│ ├── init.py
+│ ├── load.py
+│ ├── train.py
+│ ├── evaluate.py
+│ └── config.py
+├── artifacts/
+│ └── (saved models)
+├── README.md
+└── requirements.txt
+
+Model Performance
+The evaluation script produces:
+
+Cross-validation RMSE for each model
+
+Leaderboard ranking models by performance
+
+Test set metrics (MAE, RMSE) for the best model
+
+License
+This project is for educational purposes.
+
+Acknowledgments
+Ames Housing Dataset originally compiled by Dean De Cock
+
+Scikit-learn documentation for pipeline examples
+
+Author
+John Emmanuel Durosimi Terry
